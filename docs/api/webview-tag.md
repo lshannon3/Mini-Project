@@ -766,6 +766,12 @@ Corresponds to the points in time when the spinner of the tab stops spinning.
 
 Fired when attached to the embedder web contents.
 
+### Event: 'activate'
+
+Fired when the guest `WebContents` is activated, for example when the user
+clicks "Back to tab" in a video Picture-in-Picture window. This event is not
+fired when the user clicks the minimize button in the Picture-in-Picture window.
+
 ### Event: 'dom-ready'
 
 Fired when document in the given frame is loaded.

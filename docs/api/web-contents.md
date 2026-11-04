@@ -616,6 +616,12 @@ Emitted when the `WebContents` loses focus.
 The `blur` event is also emitted when switching between windows or apps for the
 `WebContents` that has focus within its window.
 
+#### Event: 'activate'
+
+Emitted when the `WebContents` is activated, for example when the user clicks
+"Back to tab" in a video Picture-in-Picture window. This event is not emitted
+when the user clicks the minimize button in the Picture-in-Picture window.
+
 #### Event: 'focus'
 
 Emitted when the `WebContents` gains focus.

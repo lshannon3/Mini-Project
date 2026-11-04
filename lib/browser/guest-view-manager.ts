@@ -168,7 +168,7 @@ const createGuest = function (
 
   // Dispatch events to embedder.
   for (const event of supportedWebViewEvents) {
-    guest.on(event as any, function (_, ...args: any[]) {
+    guest.on(event as any, function (_: Electron.Event, ...args: any[]) {
       sendToEmbedder(IPC_MESSAGES.GUEST_VIEW_INTERNAL_DISPATCH_EVENT, event, makeProps(event, args));
     });
   }

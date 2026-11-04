@@ -6,6 +6,7 @@ export const webViewEvents: Record<string, readonly string[]> = {
   'did-frame-finish-load': ['isMainFrame', 'frameProcessId', 'frameRoutingId'],
   'did-start-loading': [],
   'did-stop-loading': [],
+  activate: [],
   'dom-ready': [],
   'context-menu': ['params'],
   'devtools-open-url': ['url'],
